@@ -1,0 +1,120 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Background with Gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Main Container Styling */
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title and Subtitle Styling */
+.title {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Group Styling */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #aaa;
+    background-color: #fff;
+    transform: translateY(-50%);
+    padding: 0 5px;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input-group input:focus {
+    border-color: #2575fc;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 0.75em;
+    color: #2575fc;
+}
+
+/* Button Styling */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1em;
+    color: #fff;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #1d61d1;
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    background-color: #1a56b8;
+    transform: translateY(0);
+}
+
+/* Sign-Up Link Styling */
+.signup-link {
+    margin-top: 1rem;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.signup-link a {
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
